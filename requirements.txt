@@ -7,3 +7,5 @@ streamlit
 joblib
 scikit-learn==0.23.2
 wheel 
+scipy
+
