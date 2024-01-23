@@ -5,4 +5,4 @@ pandas
 numpy
 streamlit
 joblib
-sckit-learn == 3.2.0
+sckit-learn
