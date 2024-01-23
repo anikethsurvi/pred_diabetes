@@ -6,6 +6,6 @@ numpy
 streamlit
 joblib
 scikit-learn==0.23.2
-wheel == 0.23.2
+wheel == 0.23.0
 
 
