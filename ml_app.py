@@ -1,6 +1,6 @@
 import streamlit as st 
 import joblib
-import sklearn
+import sckit-learn
 import os
 import numpy as np
 
