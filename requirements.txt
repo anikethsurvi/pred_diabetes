@@ -5,4 +5,3 @@ pandas
 numpy
 streamlit
 joblib
-sckit-learn
