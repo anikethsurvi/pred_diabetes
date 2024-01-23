@@ -97,20 +97,21 @@ def run_eda_app():
 
 		from PIL import Image
 		with st.expander("Different Models Comparison using AutoML"):
-			img = Image.open("C:/Users/hp/ml_streamlit/model_comare.png")
+			img = Image.open("images/model_comare.png")
+
 			st.image(img,use_column_width = True)
 
 
 		with st.expander("Learning curve for Random Forest classifier"):
-			img = Image.open("C:/Users/hp/ml_streamlit/learning_curve.png")
+			img = Image.open("images/learning_curve.png")
 			st.image(img,use_column_width = True)
 
 		with st.expander("ROC curve for Random Forest classifier"):
-			img = Image.open("C:/Users/hp/ml_streamlit/roc_curve.png")
+			img = Image.open("images/roc_curve.png")
 			st.image(img,use_column_width = True)
 
 		with st.expander("confusion matrix"):
-			img = Image.open("C:/Users/hp/ml_streamlit/cm.png")
+			img = Image.open("images/cm.png")
 			st.image(img,use_column_width = True)
 
 
