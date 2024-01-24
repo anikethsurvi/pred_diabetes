@@ -7,11 +7,11 @@ attrib_info = """
 #### Attribute Information:
     - Age 1.20-65
     - Sex 1. Male, 2.Female
-    - Polyuria 1.Yes, 2.No.
-    - Polydipsia 1.Yes, 2.No.
+    - Polyuria(Excessive Urination) 1.Yes, 2.No.
+    - Polydipsia(Excessive Thirst) 1.Yes, 2.No.
     - sudden weight loss 1.Yes, 2.No.
     - weakness 1.Yes, 2.No.
-    - Polyphagia 1.Yes, 2.No.
+    - Polyphagia(Excessive Eating) 1.Yes, 2.No.
     - Genital thrush 1.Yes, 2.No.
     - visual blurring 1.Yes, 2.No.
     - Itching 1.Yes, 2.No.
@@ -19,7 +19,7 @@ attrib_info = """
     - delayed healing 1.Yes, 2.No.
     - partial paresis 1.Yes, 2.No.
     - muscle stiffness 1.Yes, 2.No.
-    - Alopecia 1.Yes, 2.No.
+    - Alopecia(Hair loss) 1.Yes, 2.No.
     - Obesity 1.Yes, 2.No.
     - Class 1.Positive, 2.Negative.
 
@@ -66,11 +66,11 @@ def run_ml_app():
 	with col1:
 		age = st.number_input("Age",10,100)
 		gender = st.radio("Gender",("Female","Male"))
-		polyuria = st.radio("Polyuria",["No","Yes"])
-		polydipsia = st.radio("Polydipsia",["No","Yes"]) 
+		polyuria = st.radio("Polyuria(Excessive Urination)",["No","Yes"])
+		polydipsia = st.radio("Polydipsia(Excessive Thirst)",["No","Yes"]) 
 		sudden_weight_loss = st.selectbox("Sudden_weight_loss",["No","Yes"])
 		weakness = st.radio("weakness",["No","Yes"]) 
-		polyphagia = st.radio("polyphagia",["No","Yes"]) 
+		polyphagia = st.radio("polyphagia(Excessive Eating)",["No","Yes"]) 
 		genital_thrush = st.selectbox("Genital_thrush",["No","Yes"]) 
 		
 	
@@ -81,7 +81,7 @@ def run_ml_app():
 		delayed_healing = st.radio("delayed_healing",["No","Yes"]) 
 		partial_paresis = st.selectbox("Partial_paresis",["No","Yes"])
 		muscle_stiffness = st.radio("muscle_stiffness",["No","Yes"]) 
-		alopecia = st.radio("alopecia",["No","Yes"]) 
+		alopecia = st.radio("alopecia(Hair loss)",["No","Yes"]) 
 		obesity = st.select_slider("obesity",["No","Yes"]) 
 
 	with st.expander("Your Selected Options"):
